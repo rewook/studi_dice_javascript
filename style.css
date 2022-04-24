@@ -1,0 +1,33 @@
+html, body {
+	height: 100%;
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#game_center{
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: blue;
+}
+
+
+
+#player_left {
+	width: 40%;
+	height: 100%;
+	float: left;
+	background-color: red;
+}
+
+#player_right {
+	width: 60%;
+	height: 100%;
+	float: left;
+	background-color: green;
+}
+
