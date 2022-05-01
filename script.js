@@ -10,19 +10,20 @@ const to2 =document.getElementById('total2')
 
 
 
+
 function newgame(){
- 
+
   let r1=0;
   let r2=0;
   let t1=0;
   let t2=0;
   let i =0;
-  
+
 ro1.value=r1
 ro2.value=r2
 to1.value=t1
 to2.value=t2
-ind.value=i  
+ind.value=i
 }
 
 function rollback(){
@@ -43,20 +44,20 @@ function rollback(){
       ro2.value=0
       ind.value =0
     }
-    
+
   }else{
-  
-   
-    if (idx == 0){     
+
+
+    if (idx == 0){
       let a = parseInt(ro1.value);
       let b = a + vd;
       ro1.value = b
-      
+
     }else{
       let a = parseInt(ro2.value);
       let b = a + vd;
       ro2.value = b
-      
+
     }
   }
 }
@@ -71,7 +72,7 @@ function keep(){
 
     ro1.value = 0
     to1.value = gb
-   
+
     ind.value= 1
     if(gb >= 100){
       alert('VOUS AVEZ GAGNE !')
@@ -93,6 +94,8 @@ function keep(){
   }
 
 }
+document.getElementById("roundplayer1").innerHTML=ro1.value;
+document.getElementById("roundplayer2").innerHTML=ro2.value;
 
 btnnew.addEventListener('click', newgame);
 btnroll.addEventListener('click',rollback)

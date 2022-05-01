@@ -1,351 +1,39 @@
-/* Desktop - 1 */
-.game{
-position: absolute;
-width: 1440px;
-height: 1024px;
-
-background: #FFFFFF;
+.body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
-/* carré_player1 */
-.cplayer1{
-position: absolute;
-width: 720px;
-height: 1024px;
-left: -2px;
-top: 0px;
-
-background: #F3F0F0;
+.fond_gauche{
+    background-color:  #fdf2e9 ;
 }
 
-/* carré_player2 */
-.cplayer2{
-position: absolute;
-width: 720px;
-height: 1024px;
-left: 720px;
-top: 0px;
-
-background: #F8FDF7;
+.h1{
+    font-family: 'Lato', sans-serif;
 }
 
-/* Rectangle 3 */
-.r3{
-position: absolute;
-width: 230px;
-height: 64px;
-left: 605px;
-top: 29px;
+.col{
+    height: 100%;
 }
 
-
-/* NEW GAME */
-.newgame{
-position: absolute;
-width: 151px;
-height: 40px;
-left: 657px;
-top: 43px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-
-color: #000000;
-
+.round{
+    color: red;
+    font-size: 96px;
+    text-align: center;
 }
 
-/* Button_New Game */
-.bnewgame{
-position: absolute;
-width: 30px;
-height: 30px;
-left: 618px;
-top: 43px;
-
-background: #C4C4C4;
+.text-player{
+    color: black;
+    height: 96px;
+    width: 48px;
+    font-size: 48px;
+    text-align: center;
 }
 
-/* Button_Hold */
-.bhold{
-position: absolute;
-width: 30px;
-height: 30px;
-left: 603px;
-top: 819px;
-
-background: #C4C4C4;
+.col {
+    display: inline-block;
+    width: 200px;
 }
-
-/* Button_Roll_Dice */
-.brolldice{
-position: absolute;
-width: 30px;
-height: 30px;
-left: 605px;
-top: 743px;
-
-background: #C4C4C4;
+.brown_white {
+    background: linear-gradient(to right, #fdf2e9 50%, white 50%);
 }
-
-/* set_player1 */
-.setplayer1{
-position: absolute;
-width: 15px;
-height: 15px;
-left: 516px;
-top: 263px;
-
-background: #F81111;
-}
-
-/* set_player2 */
-.setplayer2{
-position: absolute;
-width: 15px;
-height: 15px;
-left: 1217px;
-top: 250px;
-}
-
-
-/* Rectangle 4 */
-.rtplayer1{
-position: absolute;
-width: 387px;
-height: 79px;
-left: 173px;
-top: 205px;
-}
-
-
-/* PLAYER 1 */
-.tcurrentplayer1{
-position: absolute;
-width: 228px;
-height: 53px;
-left: 246px;
-top: 244px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-
-color: #000000;
-}
-
-
-/* PLAYER 2 */
-.tcurrentplayer2{
-position: absolute;
-width: 228px;
-height: 13px;
-left: 966px;
-top: 244px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-
-color: #000000;
-}
-
-
-/* round_player1 */
-.roundplayer1{
-position: absolute;
-width: 123px;
-height: 116px;
-left: 324px;
-top: 358px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 96px;
-line-height: 116px;
-
-color: #F74E4E;
-}
-
-
-/* round_player2 */
-.roundplayer2{
-position: absolute;
-width: 113px;
-height: 116px;
-left: 1049px;
-top: 358px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 96px;
-line-height: 116px;
-
-color: #DF3434;
-}
-
-
-/* image_dé */
-.imagede{
-position: absolute;
-width: 150px;
-height: 150px;
-left: 645px;
-top: 488px;
-}
-
-
-/* layer1 */
-.layer1{
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-}
-
-
-/* rect31 */
-.rde{
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-border: 0.269593px solid #060000;
-}
-
-
-/* Current_player1 */
-.current_player1{
-position: absolute;
-width: 210px;
-height: 150px;
-left: 219px;
-top: 735px;
-
-background: #FA0808;
-}
-
-/* Current_player2 */
-.current_player2{
-position: absolute;
-width: 210px;
-height: 150px;
-left: 1001px;
-top: 729px;
-
-background: #FB0B0B;
-}
-
-/* CURRENT1 */
-.tn_curent1{
-position: absolute;
-width: 109px;
-height: 33px;
-left: 276px;
-top: 746px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-}
-
-
-/* CURRENT2 */
-.tn_current2{
-position: absolute;
-width: 109px;
-height: 33px;
-left: 1060px;
-top: 748px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-}
-
-/* global_player1 */
-.global_player1{
-position: absolute;
-width: 71px;
-height: 48px;
-left: 303px;
-top: 795px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 48px;
-
-color: #FFFFFF;
-}
-
-
-/* global_player2 */
-.global_player2{
-position: absolute;
-width: 71px;
-height: 48px;
-left: 1091px;
-top: 795px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 48px;
-
-color: #FFFFFF;
-}
-
-
-/* ROLL DICE */
-.trolldice{
-position: absolute;
-width: 263px;
-height: 46px;
-left: 644px;
-top: 735px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 44px;
-
-color: #000000;
-}
-
-
-/* HOLD */
-.thold{
-position: absolute;
-width: 263px;
-height: 43px;
-left: 680px;
-top: 812px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 44px;
-
-color: #000000;
-}
-
