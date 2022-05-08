@@ -9,6 +9,9 @@ const to1 =document.getElementById('total1')
 const to2 =document.getElementById('total2')
 
 
+window.onload = function() {
+newgame()
+};
 
 
 function newgame(){
