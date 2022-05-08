@@ -1,19 +1,59 @@
+html {
+    min-height: 100vh;
+    margin: 0;
+
+}
 .body{
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    background-color: green;
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    max-height: 100vh;
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+
+}
+
+.cadre{
+    border-color: red;
+    border-width: thick ;
+    min-height: 100vh;
+
+}
+
+.full-height {
+    height: 100vh;
 }
 
 .fond_gauche{
     background-color:  #fdf2e9 ;
 }
 
+.nodisplay{
+    display: none;
+}
+
 .h1{
     font-family: 'Lato', sans-serif;
 }
+.col-size {
+    background: red;
+    min-height: 96px;
+    min-width: 50px;
+    text-align: center;
+}
 
-.col{
-    height: 100%;
+.rectangle{
+    width:110px;
+    min-height:50px;
+    background:red;
+    text-align: center;
+    position: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    font-size: 24px;
+    display:block;
 }
 
 .round{
@@ -30,10 +70,7 @@
     text-align: center;
 }
 
-.col {
-    display: inline-block;
-    width: 200px;
-}
+
 .brown_white {
     background: linear-gradient(to right, #fdf2e9 50%, white 50%);
 }

@@ -24,6 +24,7 @@ ro2.value=r2
 to1.value=t1
 to2.value=t2
 ind.value=i
+  affich()
 }
 
 function rollback(){
@@ -37,12 +38,15 @@ function rollback(){
 
     let idx = ind.value;
 
+
     if (idx == 0){
       ro1.value = 0
       ind.value = 1
+
     }else{
       ro2.value=0
       ind.value =0
+
     }
 
   }else{
@@ -52,11 +56,13 @@ function rollback(){
       let a = parseInt(ro1.value);
       let b = a + vd;
       ro1.value = b
+      affich()
 
     }else{
       let a = parseInt(ro2.value);
       let b = a + vd;
       ro2.value = b
+      affich()
 
     }
   }
@@ -72,12 +78,14 @@ function keep(){
 
     ro1.value = 0
     to1.value = gb
-
     ind.value= 1
+
+
     if(gb >= 100){
       alert('VOUS AVEZ GAGNE !')
       newgame()
     }
+    affich()
   }else{
     let  round = parseInt(ro2.value);
     let global = parseInt(to2.value);
@@ -86,17 +94,25 @@ function keep(){
 
     ro2.value = 0
     to2.value = gb
+
     if(gb >= 100){
       alert('VOUS AVEZ GAGNE !')
       newgame()
     }
+
     ind.value = 0
+    affich()
   }
 
 }
+btnnew.addEventListener('click', newgame);
+btnroll.addEventListener('click',rollback);
+btnkeep.addEventListener('click',keep);
+
+
+function affich(){
 document.getElementById("roundplayer1").innerHTML=ro1.value;
 document.getElementById("roundplayer2").innerHTML=ro2.value;
-
-btnnew.addEventListener('click', newgame);
-btnroll.addEventListener('click',rollback)
-btnkeep.addEventListener('click',keep)
+document.getElementById("totalplayer1").innerHTML=to1.value;
+document.getElementById("totalplayer2").innerHTML=to2.value;
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
   <title>Jeux de dé</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,66 +13,106 @@
 </head>
 
 <body>
+<div class="cadre brown_white">
 
-    <div class="row brown_white">
-        <div class="brown-white">
-            <h1 class="text-center">JEUX DE DES</h1><br>
+        <div class="row">
+            <h1 class="text-center mt-3">JEUX DE DES</h1><br>
             <input type="hidden" id="index"><br><br>
         </div>
-    </div>
 
-    <div class="row brown_white">
-        <div class="col-md-1 mx-auto">
-            <span><button id="btnnew"><i class="fa-solid fa-circle-plus"></i></button>NEW GAME</span>
+
+        <div class="row mt-3">
+            <div class="col text-center">
+                <span><button id="btnnew"><i class="fa-solid fa-circle-plus"></i></button>NEW GAME</span>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col text-player">PLAYER 1</div>
+            <div class="col text-player">PLAYER 2</div>
+        </div>
 
-    <div class="row brown_white">
-        <div class="col mx-auto text-player">PLAYER 1</div>
-        <div class="col mx-auto text-player">PLAYER 2</div>
-    </div>
 
-    <div class="row brown_white">
+
+    <div class="row">
         <div class="col mx-auto round">
             <span id="roundplayer1"></span>
         </div>
+
+        <div class="col text-center">
+            <label>Valeur dé<input type="number" id="valeurd"/></label><br>
+        </div>
+
         <div class="col mx-auto round">
             <span id="roundplayer2"></span>
         </div>
     </div>
 
 
-    <div class="row brown_white">
-            <div class="col mx-auto">
-                <div class="fond_gauche bg-lighten-xl">
-                <label>round joueur 1<input type="number" id="round1"></label><br>
-                <label>Total joueur 1</label><input type="number" id="total1"><br>
-                </div>
+    <div class="row">
+        <div class="col text-center mx-auto">
+
+            <div class="rectangle">
+                <span>CURRENT</span>
             </div>
 
-            <div class="col mx-auto bg-">
-                <label>round joueur 2<input type="number" id="round2"></label><br>
-                <label>Total joueur 2</label><input type="number" id="total2"><br>
+
+        </div>
+
+        <div class="col text-center">
+            <span><button id="btnroll"><i class="fa-solid fa-circle-plus"></i></button>ROLL DICE</span>
+
+        </div>
+
+        <div class="col text-center mx-auto">
+
+        <div class="rectangle">
+            <span>CURRENT</span>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mx-auto text-center">
+            <div  class="rectangle">
+                <span id="totalplayer1"></span>
             </div>
+        </div>
+
+        <div class="col text-center ">
+            <span><button id="btnkeep"><i class="fa-solid fa-circle-plus"></i></button>HOLD</span>
+        </div>
+
+        <div class="col mx-auto text-center">
+            <div class="rectangle">
+                <span id="totalplayer2" ></span>
+            </div>
+        </div>
     </div>
 
 
 
+    <div class="row nodisplay">
+
+
+
+            <div class="col text-center">
+
+                <label>round joueur 1<input type="number" id="round1"></label><br>
+                <label>Total joueur 1<input type="number" id="total1"></label><br>
+
+            </div>
 
 
 
 
 
+            <div class="col text-center ">
+                <label>round joueur 2<input type="number" id="round2"></label><br>
+                <label>Total joueur 2</label><input type="number" id="total2"><br>
+            </div>
 
 
-
-
-
-
-
-
-
-
+    </div>
+</div>
 
 
 
