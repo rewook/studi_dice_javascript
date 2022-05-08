@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="cadre brown_white">
+<div class="cadre brown_white container bordered">
 
         <div class="row">
             <h1 class="text-center mt-3">JEUX DE DES</h1><br>
@@ -27,28 +27,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col text-player">PLAYER 1<span class="round" id="ip1">.</span></div>
-            <div class="col text-player">PLAYER 2<span class="round" id="ip2">.</span></div>
+            <div class="col text-player"><div>PLAYER 1<img src="img/de/dot.png" id="ip1" /></div></div>
+            <div class="col text-player"><span class="round"></span></div>
+            <div class="col text-player"><div>PLAYER 2<img src="img/de/dot.png" id="ip2" /></div></div>
         </div>
 
 
 
-    <div class="row">
+    <div class="row cadre-player">
         <div class="col mx-auto round">
             <span id="roundplayer1"></span>
         </div>
 
-        <div class="col text-center">
-            <label>Valeur dé<input type="number" id="valeurd"/></label><br>
+
+        <div  class="col text-center imagede mt-5">
+            <img id="imagede" src="img/de/de_cinq.png"  alt="image du de"/>
         </div>
 
         <div class="col mx-auto round">
             <span id="roundplayer2"></span>
         </div>
     </div>
+    <div class="col text-center nodisplay">
+        <label>Valeur dé<input type="number" id="valeurd"/></label><br>
+    </div>
 
-
-    <div class="row">
+    <div class="row mt-5">
         <div class="col text-center mx-auto">
 
             <div class="rectangle">
@@ -73,7 +77,7 @@
     <div class="row">
         <div class="col mx-auto text-center">
             <div  class="rectangle">
-                <span id="totalplayer1"></span>
+                <span class="totalplayer" id="totalplayer1"></span>
             </div>
         </div>
 
@@ -83,7 +87,7 @@
 
         <div class="col mx-auto text-center">
             <div class="rectangle">
-                <span id="totalplayer2" ></span>
+                <span class="totalplayer" id="totalplayer2" ></span>
             </div>
         </div>
     </div>
