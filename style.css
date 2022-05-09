@@ -3,7 +3,8 @@ html {
     margin: 0;
 
 }
-.body{
+
+.body {
     width: 100vw;
     background-color: green;
     font-family: 'Lato', sans-serif;
@@ -14,14 +15,14 @@ html {
 
 }
 
-.cadre{
+.cadre {
     border-color: red;
-    border-width: thick ;
+    border-width: thick;
     min-height: 100vh;
 
 }
 
-.imagede{
+.imagede {
     width: 70px;
     height: 70px;
     align-content: end;
@@ -31,70 +32,79 @@ html {
     height: 100vh;
 }
 
-.fond_gauche{
-    background-color:  #fdf2e9 ;
+.fond_gauche {
+    background-color: #fdf2e9;
 }
 
-.nodisplay{
+.nodisplay {
     display: none;
 }
 
-.h1{
+.h1 {
     font-family: 'Lato', sans-serif;
 }
+
 .col-size {
     background: red;
     min-height: 96px;
     min-width: 50px;
     text-align: center;
 }
-.bordered{
+
+.bordered {
     border-color: brown;
     border-style: solid;
     border-width: 15px;
 }
 
-.rectangle{
-    width:110px;
-    min-height:50px;
-    background:red;
+.cadre1 {
+    min-height: 150px;
+}
+
+.rectangle {
+    width: 110px;
+    min-height: 50px;
+    background: red;
     text-align: center;
     position: center;
     align-items: center;
     justify-content: center;
     margin-left: 40%;
     font-size: 24px;
-    display:block;
+    display: block;
+    font-family: 'Lato', sans-serif;
 }
 
-.totalplayer{
+.totalplayer {
     color: white;
     font-size: 48px;
 }
 
-.round{
+.round {
     color: red;
     font-size: 96px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
-.roundcircle{
+.roundcircle {
     color: red;
     font-size: 96px;
     text-align: center;
     display: none;
 }
 
-.cadre-player{
+.cadre-player {
     min-height: 33%;
 }
 
-.text-player{
+.text-player {
     color: black;
     height: 96px;
     width: 48px;
     font-size: 48px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 
